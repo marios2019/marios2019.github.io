@@ -3,9 +3,10 @@
 <!-- _layouts/bib.html -->
 
       <div class="row">
-        <div class="col-sm-2 abbr">
+        <div class="col-sm-2">
 		{%- if entry.img -%}
-			<img class="img-fluid" style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto; object-fit: contain" src="{{ entry.img }}">
+			<img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="{{ entry.img }}">
+			<!--">-->
 		  {%- endif -%}
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
