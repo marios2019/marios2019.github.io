@@ -4,15 +4,15 @@
 
       <div class="row">
         <div class="col-sm-2 abbr">
+		{%- if entry.img -%}
+			<img class="img-fluid" style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto; object-fit: contain" src="{{ entry.img }}">
+		  {%- endif -%}
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
           <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
           {%- else -%}
           <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
-        {%- endif -%}
-		{%- if entry.img -%}
-          <img style="box-shadow:4px 4px 8px #000; border-radius:2.5%; width: 100%; max-width: 150px; height: auto" src="{{ entry.img }}">
         {%- endif -%}
         </div>
 
