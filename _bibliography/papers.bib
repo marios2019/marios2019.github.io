@@ -1,72 +1,111 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{ICCV={Proc. ICCV}}
+@string{CGF_SGP={Computer Graphics Forum (Proc. SGP)}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+%%% 2021
+
+@inproceedings{Selvaraju:2021:BuildingNet, 
+  author    = {Selvaraju, P. and Nabail, M. and Loizou, M. and Maslioukova, M. and
+               Averkiou, M. and Andreou, A. and Chaudhuri, S. and Kalogerakis, E.},
+  title     = {BuildingNet: Learning to Label 3D Buildings},
+  booktitle = ICCV,
+  year      = {2021},
+  abstract  = {We introduce BuildingNet: (a) a large-scale dataset of
+			   3D building models whose exteriors are consistently labeled,
+			   and (b) a graph neural network that labels building meshes
+			   by analyzing spatial and structural relations of their geometric
+			   primitives. To create our dataset, we used crowdsourcing combined
+			   with expert guidance, resulting in 513K annotated mesh primitives,
+			   grouped into 292K semantic part components across 2K building models.
+			   The dataset covers several building categories, such as houses, 
+			   churches, skyscrapers, town halls, libraries, and castles. We include 
+			   a benchmark for evaluating mesh and point cloud labeling. Buildings
+			   have more challenging structural complexity compared to objects in
+			   existing benchmarks (e.g., ShapeNet, PartNet), thus, we hope that 
+			   our dataset can nurture the development of algorithms that are able 
+			   to cope with such large-scale geometric data for both vision and
+			   graphics tasks e.g., 3D semantic segmentation, part-based generative
+			   models, correspondences, texturing, and analysis of point cloud data
+			   acquired from real-world buildings. Finally, we show that our mesh-based
+			   graph neural network significantly improves performance over several
+			   baselines for labeling 3D meshes. Our project page www.buildingnet.org
+			   includes our dataset and code.},
+  website   = {https://buildingnet.org/},
+  code      = {https://github.com/buildingnet/buildingnet_dataset},
+  pdf		= {https://arxiv.org/pdf/2110.04955.pdf},
+  img		= {../assets/img/buildingnet.jpg},
+  video     = {https://www.youtube.com/watch?v=rl30WJo_EBo&ab_channel=EvangelosKalogerakis},
+  selected  = True
+}  
+
+@misc{Sharma:2021:SurFit, 
+  author    = {Sharma, G. and Dash, B. and Gadelha, M. and RoyChowdhury, A. and Loizou, M.
+			   and Kalogerakis, E. and Cao, L. and Learned-Miller, E. and Wang, R and Maji, S},
+  title     = {SurFit: Learning to Fit Surfaces Improves Few Shot Learning on Point Clouds},
+  eprint    = {2112.13942},
+  prefix	= {arXiv},
+  year      = {2021},
+  abstract  = {We present SurFit, a simple approach for label efficient learning of 3D shape
+			   segmentation networks. SurFit is based on a self-supervised task of decomposing
+			   the surface of a 3D shape into geometric primitives. It can be readily applied
+			   to existing network architectures for 3D shape segmentation, and improves their
+			   performance in the few-shot setting, as we demonstrate in the widely used ShapeNet
+			   and PartNet benchmarks. SurFit outperforms the prior state-of-the-art in this setting,
+			   suggesting that decomposability into primitives is a useful prior for learning
+			   representations predictive of semantic parts. We present a number of experiments
+			   varying the choice of geometric primitives and downstream tasks to demonstrate
+			   the effectiveness of the method.},
+  img		= {../assets/img/surfit.jpg},
+  preprint  = {https://arxiv.org/pdf/2112.13942.pdf},
+  selected  = False
+}  
+
+%%% 2020
+
+@article{Loizou:2021:PB-DGCNN:,
+  author    = {Loizou, M. and Averkiou, M. and Kalogerakis, E},
+  title     = {Learning Part Boundaries from 3D Point Clouds},
+  journal   = CGF_SGP,	
+  year      = {2020},
+  abstract  = {We present a method that detects boundaries of parts in 3D shapes represented as 
+			   point clouds. Our method is based on a graph convolutional network architecture that
+			   outputs a probability for a point to lie in an area that separates two or more parts
+			   in a 3D shape. Our boundary detector is quite generic: it can be trained to localize
+			   boundaries of semantic parts or geometric primitives commonly used in 3D modeling.
+			   Our experiments demonstrate that our method can extract more accurate boundaries that
+			   are closer to ground-truth ones compared to alternatives. We also demonstrate an
+			   application of our network to fine-grained semantic shape segmentation, where we also
+			   show improvements in terms of part labeling performance.},
+  volume    = {39},
+  number    = {5},
+  website   = {https://marios2019.github.io/learning_part_boundaries/},
+  code      = {https://github.com/marios2019/learning_part_boundaries},
+  pdf		= {https://arxiv.org/pdf/2007.07563.pdf},
+  img       = {../assets/img/pb_dgcnn.jpg},
+  video		= {https://www.youtube.com/watch?v=pyCZiK28nl0&ab_channel=MariosLoizou},
+  selected  = True
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
+%%% 2019
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
+@inproceedings{Loizou:2019:VisualTracking, 
+  author    = {Loizou, M. and Kaimakis, P.},
+  title     = {Model-Based 3D Visual Tracking of Rigid Bodies using Distance Transform},
+  booktitle = {Proc. VISUAL},
+  year      = {2019},
+  abstract  = {The core idea of model-based 3D tracking is that of continuously estimating
+			   the pose parameters of a 3D object throughout a sequence of images, e.g., 
+			   a video feed. Here, we present an edge-based method for achieving 3D object
+			   tracking, via Gauss-Newton optimization. We rely on natural features observations,
+			   like edges, for the detection of interest points and by using the 3D pose of the
+			   object in the previous frame, we correctly estimate its new 3D position and 
+			   orientation, in real-time. There is also a C++ implementation of the visual tracking system,
+			   with the use of the OpenCV library, which can be found in our GitHub repository 
+			   (https://github.com/marios2019/Visual Tracking).},
+  code      = {https://github.com/marios2019/Visual_Tracking},
+  pdf		= {https://www.researchgate.net/profile/William-Hurst-4/publication/340897785_The_Fourth_International_Conference_on_Applications_and_Systems_of_Visual_Paradigms_-_2019/links/5ea2e33e458515ec3a0306ed/The-Fourth-International-Conference-on-Applications-and-Systems-of-Visual-Paradigms-2019.pdf#page=49},
+  img		= {../assets/img/visual_tracking.jpg},
+  selected  = False
+} 
