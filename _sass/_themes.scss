@@ -23,6 +23,18 @@
     padding-top: 12px;
     display : block;
   }
+  
+  .slick-prev:before {
+	color: #{$grey-color-dark};
+  }
+  
+  .slick-next:before {
+    color: #{$grey-color-dark};
+  }
+  
+  .slick-dots li button:before{
+	color: #{$grey-color-dark};
+  }
 }
 
 html[data-theme='dark'] {
@@ -45,5 +57,17 @@ html[data-theme='dark'] {
   }
   .fa-moon {
     display : none;
+  }
+  
+  .slick-prev:before {
+	color: #{$grey-color-light};
+  }
+  
+  .slick-next:before {
+	color: #{$grey-color-light};
+  }
+  
+  .slick-dots li button:before{
+	color: #{$grey-color-light};
   }
 }
