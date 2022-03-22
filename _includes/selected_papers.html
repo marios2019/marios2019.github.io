@@ -1,10 +1,10 @@
 
           <div class="publications">
             <h2>selected publications</h2>
-			  <script type="text/javascript">
-				document.getElementsByClassName('bibliography')[0].classList.add('slide_list');
-			  </script>
             {% bibliography -f papers -q @*[selected=true]* %}
+			 <script type="text/javascript">
+				document.getElementsByClassName('bibliography')[0].classList.add('slide_list');
+			 </script>
           </div>
 
 		  
