@@ -2,7 +2,48 @@
 ---
 
 @string{ICCV={Proc. ICCV}}
+@string{SGP={Proc. SGP}}
 @string{CGF_SGP={Computer Graphics Forum (Proc. SGP)}}
+
+%%% 2022
+
+@inproceedings{Sharma:2022:PriFit,
+  author    = {Sharma, G. and Dash, B. and RoyChowdhury, A. and Gadelha, M. and Loizou, M.
+			   and Cao, L. and Wang, R and Learned-Miller, E. G. and Maji, S and Kalogerakis, E.},
+  title     = {PRIFIT: Learning to Fit Primitives Improves Few Shot Point Cloud Segmentation},
+  booktitle	= SGP,
+  year      = {2022},
+  abstract  = {We present PriFit, a simple approach for label efficient learning of 3D shape segmentation networks.
+	           PriFit is based on a self-supervised task of decomposing the surface of a 3D shape into geometric primitives.
+			   It can be readily applied to existing network architectures for 3D shape segmentation, and improves their
+			   performance in the few-shot setting, as we demonstrate in the widely used ShapeNet and PartNet benchmarks.
+			   PriFit outperforms the prior state-of-the-art in this setting, suggesting that decomposability into primitives
+			   is a useful prior for learning representations predictive of semantic parts. We present a number of
+			   experiments varying the choice of geometric primitives and downstream tasks to demonstrate the effectiveness
+			   of the method.},
+  website   = {https://hippogriff.github.io/prifit/},
+  code      = {https://github.com/Hippogriff/prifit},
+  pdf		= {https://arxiv.org/pdf/2112.13942.pdf},
+  img		= {../assets/img/prifit.JPG},
+  selected  = True
+}
+
+@misc{Loizou:2022:CSN,
+  author    = {Loizou, M. and Petrov, D. and Averkiou, M. and Kalogerakis, E.},
+  title     = {Cross-Shape Attention for Part Segmentation of 3D Point Clouds},
+  eprint    = {2003.09053},
+  prefix	= {arXiv},
+  year      = {2022},
+  abstract  = {We present a method that propagates point-wise feature representations across shapes within a collection for
+			  the purpose of 3D shape segmentation. This is achieved through a cross-shape attention operation that assesses
+		      the degree of interaction between points on different shapes and mediates feature propagation. For each test shape,
+		      our method finds shapes in an input collection that are suited for executing such cross-shape attention operations.
+			  The resulting point-wise feature representations lead to more consistent 3D shape segmentation results, as demonstrated
+			  in our experiments.},
+  img		= {../assets/img/CSN.JPG},
+  preprint  = {https://arxiv.org/pdf/2003.09053.pdf},
+  selected  = False
+}
 
 %%% 2021
 
@@ -38,29 +79,7 @@
   img		= {../assets/img/buildingnet.jpg},
   video     = {https://www.youtube.com/watch?v=rl30WJo_EBo&ab_channel=EvangelosKalogerakis},
   selected  = True
-}  
-
-@misc{Sharma:2021:SurFit, 
-  author    = {Sharma, G. and Dash, B. and Gadelha, M. and RoyChowdhury, A. and Loizou, M.
-			   and Kalogerakis, E. and Cao, L. and Learned-Miller, E. and Wang, R and Maji, S},
-  title     = {SurFit: Learning to Fit Surfaces Improves Few Shot Learning on Point Clouds},
-  eprint    = {2112.13942},
-  prefix	= {arXiv},
-  year      = {2021},
-  abstract  = {We present SurFit, a simple approach for label efficient learning of 3D shape
-			   segmentation networks. SurFit is based on a self-supervised task of decomposing
-			   the surface of a 3D shape into geometric primitives. It can be readily applied
-			   to existing network architectures for 3D shape segmentation, and improves their
-			   performance in the few-shot setting, as we demonstrate in the widely used ShapeNet
-			   and PartNet benchmarks. SurFit outperforms the prior state-of-the-art in this setting,
-			   suggesting that decomposability into primitives is a useful prior for learning
-			   representations predictive of semantic parts. We present a number of experiments
-			   varying the choice of geometric primitives and downstream tasks to demonstrate
-			   the effectiveness of the method.},
-  img		= {../assets/img/surfit.JPG},
-  preprint  = {https://arxiv.org/pdf/2112.13942.pdf},
-  selected  = False
-}  
+}
 
 %%% 2020
 
