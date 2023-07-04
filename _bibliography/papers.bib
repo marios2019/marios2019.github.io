@@ -5,6 +5,28 @@
 @string{SGP={Proc. SGP}}
 @string{CGF_SGP={Computer Graphics Forum (Proc. SGP)}}
 
+%%% 2023
+
+@article{Loizou:2023:CSN,
+  author    = {Loizou, M. and Garg, S. and Petrov, D. and Averkiou, M. and Kalogerakis, E.},
+  title     = {Cross-Shape Attention for Part Segmentation of 3D Point Clouds},
+  journal	= CGF_SGP,
+  year      = {2023},
+  abstract  = {We present a deep learning method that propagates point-wise feature representations across shapes within
+               a collection for the purpose of 3D shape segmentation. We propose a cross-shape attention mechanism to
+               enable interactions between a shape's point-wise features and those of other shapes. The mechanism assesses
+               both the degree of interaction between points and also mediates feature propagation across shapes, improving
+               the accuracy and consistency of the resulting point-wise feature representations for shape segmentation.
+               Our method also proposes a shape retrieval measure to select suitable shapes for cross-shape attention
+               operations for each test shape. Our experiments demonstrate that our approach yields state-of-the-art
+               results in the popular PartNet dataset.},
+  website   = {https://marios2019.github.io/CSN/},
+  code      = {https://github.com/marios2019/CSN},
+  pdf		= {https://arxiv.org/pdf/2003.09053.pdf},
+  img		= {../assets/img/CSN.jpg},
+  selected  = True
+}
+
 %%% 2022
 
 @inproceedings{Sharma:2022:PriFit,
@@ -26,23 +48,6 @@
   pdf		= {https://arxiv.org/pdf/2112.13942.pdf},
   img		= {../assets/img/prifit.jpg},
   selected  = True
-}
-
-@misc{Loizou:2022:CSN,
-  author    = {Loizou, M. and Petrov, D. and Averkiou, M. and Kalogerakis, E.},
-  title     = {Cross-Shape Attention for Part Segmentation of 3D Point Clouds},
-  eprint    = {2003.09053},
-  prefix	= {arXiv},
-  year      = {2022},
-  abstract  = {We present a method that propagates point-wise feature representations across shapes within a collection for
-			  the purpose of 3D shape segmentation. This is achieved through a cross-shape attention operation that assesses
-		      the degree of interaction between points on different shapes and mediates feature propagation. For each test shape,
-		      our method finds shapes in an input collection that are suited for executing such cross-shape attention operations.
-			  The resulting point-wise feature representations lead to more consistent 3D shape segmentation results, as demonstrated
-			  in our experiments.},
-  img		= {../assets/img/CSN.jpeg},
-  preprint  = {https://arxiv.org/pdf/2003.09053.pdf},
-  selected  = False
 }
 
 %%% 2021
