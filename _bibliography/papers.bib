@@ -2,8 +2,30 @@
 ---
 
 @string{ICCV={Proc. ICCV}}
+@string{WACV={Proc. WACV}}
 @string{SGP={Proc. SGP}}
 @string{CGF_SGP={Computer Graphics Forum (Proc. SGP)}}
+
+%%% 2024
+
+@inproceedings{Georgiou:2023:FacadeNet,
+  author    = {Georgiou, Y. and Loizou, M. and Kelly, T. and Averkiou, M.},
+  title     = {FacadeNet: Conditional Facade Synthesis via Selective Editing},
+  booktitle	= WACV,
+  year      = {2024},
+  abstract  = {We introduce FacadeNet, a deep learning approach for synthesizing building 
+			   facade images from diverse viewpoints. Our method employs a conditional GAN, taking a
+			   single view of a facade along with the desired viewpoint information and 
+			   generates an image of the facade from the distinct viewpoint. To 
+			   precisely modify view-dependent elements like windows and doors while 
+			   preserving the structure of view-independent components such as walls, 
+			   we introduce a selective editing module. This module leverages image 
+			   embeddings extracted from a pretrained vision transformer. Our 
+			   experiments demonstrated state-of-the-art performance on building 
+			   facade generation, surpassing alternative methods},
+  img		= {../assets/img/facadenet.png},
+  selected  = False
+}
 
 %%% 2023
 
@@ -20,6 +42,8 @@
                Our method also proposes a shape retrieval measure to select suitable shapes for cross-shape attention
                operations for each test shape. Our experiments demonstrate that our approach yields state-of-the-art
                results in the popular PartNet dataset.},
+  volume    = {42},
+  number    = {5},
   website   = {https://marios2019.github.io/CSN/},
   code      = {https://github.com/marios2019/CSN},
   pdf		= {https://arxiv.org/pdf/2003.09053.pdf},
