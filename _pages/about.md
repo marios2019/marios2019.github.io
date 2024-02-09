@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Research Associate at [CYENS CoE](https://www.cyens.org.cy) and a Ph.D. student at the 
+I am a Research Associate at [CYENS CoE](https://www.cyens.org.cy) and a Ph.D. candidate at the 
 [Computer Science Department](https://www.cs.ucy.ac.cy/) at UCY, under the supervision of
 [Dr. Melinos Averkiou](https://www.cyens.org.cy/en-gb/about/people/research-department/multidisciplinary-research-groups/mrg-leaders/melinos-averkiou-1/)
 and [Prof. Evangelos Kalogerakis](https://people.cs.umass.edu/~kalo/). My research topics include 3D computer vision, 3D deep learning and geometry processing.
